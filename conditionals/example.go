@@ -14,5 +14,5 @@ func Biggest(){
 		max = number3
 	}
 
-	fmt.Printf("\nMaximum Value : %v", max)
+	fmt.Printf("\nMaximum Value : %v\n", max)
 }

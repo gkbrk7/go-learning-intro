@@ -4,6 +4,7 @@ import (
 	"golesson/packagesmodules"
 	"golesson/conditionals"
 	"golesson/loops"
+	"golesson/arrays"
 )
 
 func main() {
@@ -11,4 +12,7 @@ func main() {
 	conditionals.Conditional()
 	conditionals.Biggest()
 	loops.Loop()
+	loops.Guess()
+	loops.IsPrime()
+	arrays.Array()
 }
