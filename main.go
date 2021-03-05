@@ -1,10 +1,13 @@
 package main
 
 import (
+	"fmt"
 	"golesson/packagesmodules"
 	"golesson/conditionals"
 	"golesson/loops"
 	"golesson/arrays"
+	"golesson/slices"
+	"golesson/functions"
 )
 
 func main() {
@@ -15,4 +18,7 @@ func main() {
 	loops.Guess()
 	loops.IsPrime()
 	arrays.Array()
+	slices.Slice()
+	functions.SayHello()
+	fmt.Println(functions.Sum(2,3))
 }
