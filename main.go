@@ -1,7 +1,8 @@
 package main
 
 import (
-	 "fmt"
+	// "fmt"
+	// "time"
 	// "golesson/packagesmodules"
 	// "golesson/conditionals"
 	// "golesson/loops"
@@ -12,12 +13,12 @@ import (
 	// "golesson/pointer_struct"
 	// "golesson/goroutines"
 	// "golesson/gochannels"
-	"golesson/interfaces"
+	// "golesson/interfaces"
 	// "golesson/stringmethods"
-	"golesson/defers"
-	"golesson/exceptionhandling"
-	"golesson/errorhandling"
-	// "time"
+	// "golesson/defers"
+	// "golesson/exceptionhandling"
+	// "golesson/errorhandling"
+	"golesson/restful"
 )
 
 func main() {
@@ -61,11 +62,13 @@ func main() {
 	// interfaces.Test()
 	// interfaces.CreditTest()
 	// stringmethods.Test()
-	defers.C()
-	defers.Testing()
-	defers.ProductTest()
-	exceptionhandling.Exception()
-	interfaces.Assertion()
-	errorhandling.ErrorHandler()
-	fmt.Println(errorhandling.Guess2(500))
+	// defers.C()
+	// defers.Testing()
+	// defers.ProductTest()
+	// exceptionhandling.Exception()
+	// interfaces.Assertion()
+	// errorhandling.ErrorHandler()
+	// fmt.Println(errorhandling.Guess2(500))
+	restful.Get()
+	restful.Post()
 }
