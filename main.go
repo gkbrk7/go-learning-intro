@@ -10,6 +10,9 @@ import (
 	"golesson/functions"
 	"golesson/maps_forrange"
 	"golesson/pointer_struct"
+	"golesson/goroutines"
+	"golesson/gochannels"
+	"time"
 )
 
 func main() {
@@ -36,4 +39,19 @@ func main() {
 	pointer_struct.Pointer2(nums)
 	fmt.Println(nums)
 	pointer_struct.Struct()
+
+	go goroutines.Even()
+	go goroutines.Odd()
+
+	evenNumbersSumCn := make(chan int)
+	oddNumbersSumCn := make(chan int)
+	go gochannels.Even(evenNumbersSumCn)
+	go gochannels.Odd(oddNumbersSumCn)
+
+	evenNumbersSum, oddNumbersSum := <-evenNumbersSumCn, <-oddNumbersSumCn
+	multiply := evenNumbersSum * oddNumbersSum
+	fmt.Println("Multiply : ", multiply)
+	
+	time.Sleep(time.Second * 2)
+
 }
