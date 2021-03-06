@@ -1,7 +1,7 @@
 package main
 
 import (
-	// "fmt"
+	 "fmt"
 	// "golesson/packagesmodules"
 	// "golesson/conditionals"
 	// "golesson/loops"
@@ -13,7 +13,10 @@ import (
 	// "golesson/goroutines"
 	// "golesson/gochannels"
 	"golesson/interfaces"
-	"golesson/stringmethods"
+	// "golesson/stringmethods"
+	"golesson/defers"
+	"golesson/exceptionhandling"
+	"golesson/errorhandling"
 	// "time"
 )
 
@@ -55,7 +58,14 @@ func main() {
 	// fmt.Println("Multiply : ", multiply)
 	
 	// time.Sleep(time.Second * 2)
-	interfaces.Test()
-	interfaces.CreditTest()
-	stringmethods.Test()
+	// interfaces.Test()
+	// interfaces.CreditTest()
+	// stringmethods.Test()
+	defers.C()
+	defers.Testing()
+	defers.ProductTest()
+	exceptionhandling.Exception()
+	interfaces.Assertion()
+	errorhandling.ErrorHandler()
+	fmt.Println(errorhandling.Guess2(500))
 }
